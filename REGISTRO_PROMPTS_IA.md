@@ -6,7 +6,7 @@ El uso de la IA en este proyecto se ha enfocado de manera crítica y responsable
 
 ---
 
-## 🛠️ Registro de Prompts de Configuración y Resolución de Errores
+## Registro de Prompts de Configuración y Resolución de Errores
 
 ### Consulta 1: Resolución del bug crítico de compilación en el entorno local
 > "Al intentar ejecutar el método main de la interfaz gráfica en IntelliJ IDEA tras modificar las dependencias del pom.xml, el compilador lanza una excepción crítica de inicialización: java.lang.ExceptionInInitializerError en com.sun.tools.javac.code.TypeTag::UNKNOWN. El proceso de compilación queda bloqueado por completo. ¿Cuál es el origen de este error y cómo se puede resolver?"
@@ -16,7 +16,7 @@ El uso de la IA en este proyecto se ha enfocado de manera crítica y responsable
 
 ---
 
-## 📐 Registro de Prompts de Arquitectura y Lógica de Datos
+## Registro de Prompts de Arquitectura y Lógica de Datos
 
 ### Consulta 3: Planteamiento conceptual y rendimiento de relaciones ORM
 > "En el modelo de entidades JPA del proyecto, necesito mapear relaciones entre las tablas maestras de recursos y las reservas. ¿Cuál es la estrategia arquitectónica más eficiente en términos de memoria y rendimiento: utilizar relaciones bidireccionales con colecciones @OneToMany o implementar relaciones unidireccionales @ManyToOne? ¿Qué tipo de FetchType sería el más adecuado en este contexto?"
@@ -26,14 +26,14 @@ El uso de la IA en este proyecto se ha enfocado de manera crítica y responsable
 
 ---
 
-## 🗂️ Registro de Prompts de Control de Versiones (Git)
+## Registro de Prompts de Control de Versiones (Git)
 
 ### Consulta 5: Resolución de conflictos de colisión de repositorios remotos
 > "Al configurar el repositorio remoto en Git, se asignó por error la URL de otro proyecto mediante git remote add origin. Al intentar sobrescribirla con la URL correcta, el sistema indica que el origen ya existe. ¿Cuál es el comando adecuado para reemplazar la URL remota incorrecta y cómo se puede verificar posteriormente que la configuración ha quedado correctamente establecida?"
 
 ---
 
-## 🎨 Registro de Prompts de Interfaz Gráfica (Swing / UI)
+## Registro de Prompts de Interfaz Gráfica (Swing / UI)
 
 ### Consulta 6: Instalar la librería del calendario (LGoodDatePicker)
 > "Quiero usar un calendario visual en mi proyecto en lugar de escribir la fecha a mano. He visto que la librería LGoodDatePicker está muy bien. Como mi proyecto de IntelliJ usa Maven, ¿cómo tengo que poner la dependencia en el archivo pom.xml y qué código básico necesito para que el calendario aparezca en un JPanel?"
@@ -58,7 +58,7 @@ El uso de la IA en este proyecto se ha enfocado de manera crítica y responsable
 
 ---
 
-## ⚙️ Registro de Prompts de Lógica de Negocio y Persistencia
+## Registro de Prompts de Lógica de Negocio y Persistencia
 
 ### Consulta 13: Filtros dinámicos usando Streams
 > "Tengo una lista con todas las reservas cargadas de la base de datos. En la interfaz tengo tres filtros (fecha, usuario y recurso). Necesito hacer un método que filtre esa lista en memoria basándose en lo que el usuario haya seleccionado en esos tres desplegables. He visto que se puede hacer rápido usando Streams en Java 8, ¿me ayudas con la lógica?"
