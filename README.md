@@ -1,20 +1,20 @@
-# 🏫 Sistema Aulateca - Gestión de Reservas
+# Sistema Aulateca - Gestión de Reservas
 
 ¡Bienvenido al repositorio del proyecto **Aulateca**! Esta aplicación de escritorio ha sido desarrollada como una solución robusta y desacoplada para gestionar las reservas de espacios, aulas y recursos compartidos de un centro educativo.
 
 ---
 
-## 📂 Estructura de la Documentación Oficial
+## Estructura de la Documentación Oficial
 
 En cumplimiento con los requisitos de evaluación descritos en el pliego del proyecto, la documentación detallada se encuentra dividida en los siguientes ficheros independientes en la raíz del repositorio:
 
-1. 📔 **[Especificaciones del Modelo de Negocio](ESPECIFICACIONES_MODELO_NEGOCIO.md):** Explicación de las entidades del dominio, lógica de negocio de los tramos horarios, control de recursos en mantenimiento (Punto 10) y el sistema de seguridad contra solapamientos o reservas duplicadas (Punto 11).
-2. 🛠️ **[Especificaciones Técnicas](ESPECIFICACIONES_TECNICAS.md):** Arquitectura del software estructurada en capas (MVC + Capa de Servicio), justificación del uso de Java 21, rendimiento de las consultas ORM con Hibernate (`@ManyToOne` + `FetchType.EAGER`), patrón repositorio genérico y decisiones técnicas sobre el entorno de desarrollo.
-3. 🤖 **[Registro de Prompts de IA](REGISTRO_PROMPTS_IA.md):** Documento de transparencia que recopila las consultas críticas realizadas a herramientas de Inteligencia Artificial para la resolución de errores del compilador y la optimización de código.
+1. **[Especificaciones del Modelo de Negocio](ESPECIFICACIONES_MODELO_NEGOCIO.md):** Explicación de las entidades del dominio, lógica de negocio de los tramos horarios, control de recursos en mantenimiento (Punto 10) y el sistema de seguridad contra solapamientos o reservas duplicadas (Punto 11).
+2. **[Especificaciones Técnicas](ESPECIFICACIONES_TECNICAS.md):** Arquitectura del software estructurada en capas (MVC + Capa de Servicio), justificación del uso de Java 21, rendimiento de las consultas ORM con Hibernate (`@ManyToOne` + `FetchType.EAGER`), patrón repositorio genérico y decisiones técnicas sobre el entorno de desarrollo.
+3. **[Registro de Prompts de IA](REGISTRO_PROMPTS_IA.md):** Documento de transparencia que recopila las consultas críticas realizadas a herramientas de Inteligencia Artificial para la resolución de errores del compilador y la optimización de código.
 
 ---
 
-## 🗂️ Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 AulaTecaProject/
@@ -45,7 +45,7 @@ AulaTecaProject/
 
 ---
 
-## 🛠️ Requisitos del Sistema e Infraestructura
+## Requisitos del Sistema e Infraestructura
 
 Para ejecutar y evaluar este proyecto de forma local, asegúrese de contar con el siguiente entorno configurado:
 
@@ -68,7 +68,7 @@ Para ejecutar y evaluar este proyecto de forma local, asegúrese de contar con e
 
 ---
 
-## 🚀 Instrucciones de Configuración y Despliegue
+## Instrucciones de Configuración y Despliegue
 
 Siga estos pasos de manera secuencial para arrancar la aplicación en su máquina:
 
@@ -99,7 +99,7 @@ Edite el fichero `src/main/resources/hibernate.cfg.xml` y ajuste las credenciale
 <property name="connection.password">SU_CONTRASEÑA_AQUI</property>
 ```
 
-> ⚠️ **Importante:** La propiedad `hbm2ddl.auto` está configurada en `update`, lo que permite que Hibernate cree o actualice automáticamente el esquema de tablas al arrancar la aplicación si aún no existe.
+> **Importante:** La propiedad `hbm2ddl.auto` está configurada en `update`, lo que permite que Hibernate cree o actualice automáticamente el esquema de tablas al arrancar la aplicación si aún no existe.
 
 ### 3. Compilar y Ejecutar con Maven
 
@@ -117,7 +117,7 @@ Alternativamente, desde IntelliJ IDEA basta con abrir el proyecto, dejar que Mav
 
 ---
 
-## 🖥️ Guía de la Interfaz Gráfica
+## Guía de la Interfaz Gráfica
 
 La aplicación consta de **12 ventanas y diálogos** implementados en Java Swing puro con `GridBagLayout`, sin uso de diseñadores visuales de arrastrar y soltar.
 
@@ -178,7 +178,7 @@ Accesibles desde el menú superior o la tarjeta de "Gestión General":
 
 ---
 
-## 🏗️ Arquitectura del Software
+## Arquitectura del Software
 
 La aplicación implementa un patrón **MVC estricto con Capa de Servicio intermedia**, organizado en los siguientes paquetes:
 
@@ -215,7 +215,7 @@ LoginView → MainView → ReservationWizardView
 
 ---
 
-## 🗃️ Modelo de Datos
+## Modelo de Datos
 
 ```
 users ──────────────────────────────────────────────────────────┐
@@ -240,7 +240,7 @@ resource_types          resource_status                           │
 
 ---
 
-## ⚙️ Notas Técnicas Relevantes
+## Notas Técnicas Relevantes
 
 - **Lombok desactivado:** Aunque la dependencia permanece declarada en el `pom.xml`, todos los getters, setters y constructores están escritos de forma explícita en las entidades para garantizar la portabilidad entre entornos y eliminar problemas con procesadores de anotaciones.
 - **Java 21 LTS:** Se descartaron versiones de desarrollo (Java 25) por incompatibilidades del compilador interno (`TypeTag::UNKNOWN`). No se usan características en estado *Preview*.
