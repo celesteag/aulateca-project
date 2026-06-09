@@ -8,7 +8,7 @@
 
 En cumplimiento con los requisitos de evaluación descritos en el pliego del proyecto, la documentación detallada se encuentra dividida en los siguientes ficheros independientes en la raíz del repositorio:
 
-1. **[Especificaciones del Modelo de Negocio](ESPECIFICACIONES_MODELO_NEGOCIO.md):** Explicación de las entidades del dominio, lógica de negocio de los tramos horarios, control de recursos en mantenimiento (Punto 10) y el sistema de seguridad contra solapamientos o reservas duplicadas (Punto 11).
+1. **[Especificaciones del Modelo de Negocio](ESPECIFICACIONES_MODELO_NEGOCIO.md):** Explicación de las entidades del dominio, lógica de negocio de los tramos horarios, control de recursos en mantenimiento y el sistema de seguridad contra solapamientos o reservas duplicadas.
 2. **[Especificaciones Técnicas](ESPECIFICACIONES_TECNICAS.md):** Arquitectura del software estructurada en capas (MVC + Capa de Servicio), justificación del uso de Java 21, rendimiento de las consultas ORM con Hibernate (`@ManyToOne` + `FetchType.EAGER`), patrón repositorio genérico y decisiones técnicas sobre el entorno de desarrollo.
 3. **[Registro de Prompts de IA](REGISTRO_PROMPTS_IA.md):** Documento de transparencia que recopila las consultas críticas realizadas a herramientas de Inteligencia Artificial para la resolución de errores del compilador y la optimización de código.
 
